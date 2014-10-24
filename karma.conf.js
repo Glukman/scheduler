@@ -10,13 +10,10 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    files: require('./concatenationOrder').order.concat(['tests/**/*.js']),
+    //files: require('./concatenationOrder').order.concat(['tests/**/*.js']),
 
     // list of files to exclude
-    exclude: [
-		'start.js',
-        'helpers/errorController.js'
-    ],
+    exclude: [],
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
@@ -27,15 +24,16 @@ module.exports = function(config) {
 	},
 
     preprocessors: {
-      'helpers/*.js': ['coverage'],
-      'models/*.js': ['coverage'],
-      'presenters/*.js': ['coverage']
+      'View/*.js': ['coverage'],
+      'Model/*.js': ['coverage'],
+      'Collection/*.js': ['coverage'],
+      'Router/*.js': ['coverage']
     },
 
     coverageReporter: {
         reporters:[
-            {type: 'html', dir : 'test_result/coverage'},
-            {type: 'cobertura', dir : 'test_result/coverage'}
+            {type: 'html', dir : 'test_result'},
+            {type: 'cobertura', dir : 'test_result/cobertura'}
         ]
     },
 
