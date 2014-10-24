@@ -12,5 +12,8 @@
     "karma-phantomjs-launcher": "0.1.2",
     "karma-coverage": "0.2.1",
     "karma-chrome-launcher": "*"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13"
   }
 }
