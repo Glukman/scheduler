@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             'src/View/*.js',
 
         ],
-        dest: './src/main.js',
+        dest: './src/compiled.js',
     }
         }
 
@@ -24,6 +24,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['concat']);
+    grunt.registerTask('default', ['concat', 'min']);
 
 };
