@@ -14,6 +14,6 @@
     "karma-chrome-launcher": "*"
   },
   "devDependencies": {
-    "grunt-cli": "^0.1.13"
+    "grunt-cli -g": "^0.1.13"
   }
 }

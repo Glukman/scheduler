@@ -7,15 +7,15 @@ module.exports = function(grunt) {
         concat: {
             // 2. Настройка для объединения файлов находится тут
             dist: {
-        src: [
-            'src/Collection/*.js',
-            'src/Model/*.js',
-            'src/Router/*.js',
-            'src/View/*.js',
+                src: [
+                    'src/Collection/*.js',
+                    'src/Model/*.js',
+                    'src/Router/*.js',
+                    'src/View/*.js',
 
-        ],
-        dest: './src/compiled.js',
-    }
+                ],
+                dest: './src/compiled.js'
+            }
         }
 
     });

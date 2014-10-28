@@ -13,7 +13,7 @@
     "indent": 4,
     "quotmark": "single",
     "expr": true,
-    "predef": ["_", "bsca", "mvp", "kony", "alert", "jasmine", "window", "numeral", "moment",
+    "predef": ["_", "alert", "jasmine", "window", "numeral", "moment",
         "describe", "it", "xit", "beforeEach", "spyOn", "expect", "afterEach", "constants", "document"]
 
 }
